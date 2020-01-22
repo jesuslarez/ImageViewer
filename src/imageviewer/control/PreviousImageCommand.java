@@ -1,15 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package imageviewer.control;
 
 import imageviewer.ui.ImageDisplay;
 
 /**
  *
- * @author Familia
+ * @author Jesus Larez
  */
 public class PreviousImageCommand implements Command {
 
@@ -18,8 +13,6 @@ public class PreviousImageCommand implements Command {
     public PreviousImageCommand(ImageDisplay imageDisplay) {
         this.imageDisplay = imageDisplay;
     }
-    
-    
 
     @Override
     public String name() {

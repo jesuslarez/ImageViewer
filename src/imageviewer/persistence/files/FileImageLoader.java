@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package imageviewer.persistence.files;
 
 import imageviewer.model.Image;
@@ -75,10 +70,13 @@ public class FileImageLoader implements ImageLoader {
         return new FilenameFilter() {
             @Override
             public boolean accept(File dir, String name) {
-                for (String extension : imageExtensions) 
-                    if (name.endsWith(extension)) return true;
-                return false;
+                for (String extension : imageExtensions) {
+                    if (name.endsWith(extension)) {
+                        return true;
+                    }
                 }
+                return false;
+            }
         };
     }
 }

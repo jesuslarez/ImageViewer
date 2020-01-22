@@ -1,7 +1,10 @@
 
 package imageviewer.model;
 
-public class Image {
+public interface Image {
     
     byte[] bitmap();
+
+    Image next();
+    Image prev();
 }

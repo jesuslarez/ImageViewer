@@ -1,10 +1,11 @@
-
 package imageviewer.ui;
 
 import imageviewer.model.Image;
 
-public class ImageDisplay {
-    
+public interface ImageDisplay {
+
     void display(Image image);
-    
+
+    public Image currentImage();
+
 }
